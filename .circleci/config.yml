@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn run prettier --list-different
+      - run: yarn run eslint
+      - run:
+          command: yarn run test --coverage --testResultsProcessor="jest-junit"
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit.xml"
+      - store_test_results:
+          path: reports
+      - store_artifacts:
+          path: coverage/lcov-report
+          destination: coverage
+      - run: node src/bin --markdownChangelogPath src/TEST_CHANGELOG.md --outputDirectoryPath /tmp/static-site
+      - store_artifacts:
+          path: /tmp/static-site
+          destination: demo

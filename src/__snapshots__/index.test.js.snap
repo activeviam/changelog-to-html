@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`conversion works as expected 1`] = `
+"<!doctype html>
+<html lang=\\"en\\">
+  <head>
+    <meta charset=\\"utf-8\\">
+    <meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\">
+    <link rel=\\"shortcut icon\\" href=\\"./favicon.ico\\">
+    <link rel=\\"stylesheet\\" href=\\"./style.css\\">
+    <title>Test Changelog</title>
+    <style>
+        /* Taken from https://github.com/sindresorhus/github-markdown-css#usage */
+
+      	.markdown-body {
+          box-sizing: border-box;
+          min-width: 200px;
+          max-width: 980px;
+          margin: 0 auto;
+          padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+          .markdown-body {
+            padding: 15px;
+          }
+        }
+    </style>
+  </head>
+  <body class=\\"markdown-body\\">
+    <h1>Test Changelog</h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<h2>
+<a id=\\"unreleased\\" href=\\"#unreleased\\" class=\\"anchor\\"><!-- Taken from GitHub.com -->
+<svg aria-hidden=\\"true\\" class=\\"octicon octicon-link\\" height=\\"16\\" version=\\"1.1\\" viewbox=\\"0 0 16 16\\" width=\\"16\\">
+  <path d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path>
+</svg>
+</a>[Unreleased]</h2>
+<h3>
+<a id=\\"unreleased-added\\" href=\\"#unreleased-added\\" class=\\"anchor\\"><!-- Taken from GitHub.com -->
+<svg aria-hidden=\\"true\\" class=\\"octicon octicon-link\\" height=\\"16\\" version=\\"1.1\\" viewbox=\\"0 0 16 16\\" width=\\"16\\">
+  <path d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path>
+</svg>
+</a>Added</h3>
+<ul>
+<li>
+<p>Showcase <code>code block</code>, <em>italic</em> and <strong>bold</strong>.</p>
+</li>
+<li>
+<p>Also supports syntax highlighting:</p>
+<pre class=\\"hljs\\"><code><span class=\\"hljs-keyword\\">const</span> sum = <span class=\\"hljs-function\\">(<span class=\\"hljs-params\\">a, b</span>) =&gt;</span> a + b;
+<span class=\\"hljs-built_in\\">console</span>.log(sum(<span class=\\"hljs-number\\">1</span>, <span class=\\"hljs-number\\">1</span>));
+</code></pre>
+</li>
+</ul>
+<h2>
+<a id=\\"0-1-0\\" href=\\"#0-1-0\\" class=\\"anchor\\"><!-- Taken from GitHub.com -->
+<svg aria-hidden=\\"true\\" class=\\"octicon octicon-link\\" height=\\"16\\" version=\\"1.1\\" viewbox=\\"0 0 16 16\\" width=\\"16\\">
+  <path d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path>
+</svg>
+</a>[0.1.0] - 2001-01-01</h2>
+<h3>
+<a id=\\"0-1-0-added\\" href=\\"#0-1-0-added\\" class=\\"anchor\\"><!-- Taken from GitHub.com -->
+<svg aria-hidden=\\"true\\" class=\\"octicon octicon-link\\" height=\\"16\\" version=\\"1.1\\" viewbox=\\"0 0 16 16\\" width=\\"16\\">
+  <path d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path>
+</svg>
+</a>Added</h3>
+<ul>
+<li>
+<p>Tables are also supported:</p>
+<table>
+<thead>
+<tr>
+<th>First Column</th>
+<th>Second Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first cell</td>
+<td>second cell</td>
+</tr>
+<tr>
+<td>third cell</td>
+<td>fourth cell</td>
+</tr>
+<tr>
+<td>fifth cell</td>
+<td>sixth cell</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h3>
+<a id=\\"0-1-0-changed\\" href=\\"#0-1-0-changed\\" class=\\"anchor\\"><!-- Taken from GitHub.com -->
+<svg aria-hidden=\\"true\\" class=\\"octicon octicon-link\\" height=\\"16\\" version=\\"1.1\\" viewbox=\\"0 0 16 16\\" width=\\"16\\">
+  <path d=\\"M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z\\"></path>
+</svg>
+</a>Changed</h3>
+<ul>
+<li>
+<p>And diffs too:</p>
+<pre class=\\"hljs\\"><code><span class=\\"hljs-comment\\">--- old.md	2013-11-20 13:15:34.000000000 -0800</span>
+<span class=\\"hljs-comment\\">+++ new.md	2013-11-20 13:15:31.000000000 -0800</span>
+<span class=\\"hljs-meta\\">@@ -1,6 +1,6 @@</span>
+<span class=\\"hljs-deletion\\">-#### A Example for markdown-diff</span>
+<span class=\\"hljs-addition\\">+#### An Example for Markdown-Diff</span>
+
+<span class=\\"hljs-deletion\\">-* Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veinam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+<span class=\\"hljs-addition\\">+* Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+</code></pre>
+</li>
+</ul>
+
+  </body>
+</html>
+"
+`;

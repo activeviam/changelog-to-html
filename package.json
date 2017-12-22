@@ -1,0 +1,68 @@
+{
+  "bin": "src/bin",
+  "bugs": {
+    "url": "https://github.com/activeviam/changelog-to-html/issues"
+  },
+  "description":
+    "CLI to convert a CHANGELOG.md following the http://keepachangelog.com convention to a static web page with permalinks and a GitHub look and feel",
+  "dependencies": {
+    "fs-extra": "~5.0.0",
+    "github-markdown-css": "~2.10.0",
+    "github-slugid": "~1.0.1",
+    "highlight.js": "~9.12.0",
+    "markdown-it": "~8.4.0",
+    "yargs": "~11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "~4.16.0",
+    "eslint-config-prettier": "~2.9.0",
+    "eslint-plugin-node": "~5.2.1",
+    "jest": "~22.1.4",
+    "jest-junit": "~3.4.1",
+    "prettier": "~1.10.2"
+  },
+  "engines": {
+    "node": ">= 6.5.0"
+  },
+  "files": [
+    "src/bin.js",
+    "src/favicon.ico",
+    "src/index.html",
+    "src/index.js",
+    "src/permalink.svg"
+  ],
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    }
+  },
+  "keywords": [
+    "changelog",
+    "keepachangelog",
+    "markdown",
+    "html",
+    "static",
+    "web page",
+    "github",
+    "permalink",
+    "anchor"
+  ],
+  "license": "MIT",
+  "main": "src",
+  "name": "changelog-to-html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/activeviam/changelog-to-html"
+  },
+  "scripts": {
+    "eslint": "eslint . --max-warnings 0",
+    "prettier": "prettier \"**/*.{js,json,md}\"",
+    "test": "jest"
+  },
+  "version": "0.1.0"
+}
