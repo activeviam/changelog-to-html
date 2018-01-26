@@ -7,13 +7,11 @@ This package provides a CLI to convert a `CHANGELOG.md` file following the [Keep
 
 It will mostly be useful for closed source libraries where customers do not have access to the source code and thus cannot benefit from the Markdown viewer built into GitHub.
 
-## Demo
+## Screenshot
 
 The generated HTML page looks like this:
 
 ![Screenshot of a generated HTML page from one CHANGELOG.md](assets/screenshot.png)
-
-You can also find an always up-to-date preview in the artifacts of the [latest build](https://circleci.com/gh/activeviam/changelog-to-html).
 
 ## Permalinks
 
