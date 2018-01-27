@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable node/no-unpublished-bin */
 'use strict';
 
 const {argv} = require('yargs').options({
