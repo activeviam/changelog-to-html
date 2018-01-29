@@ -12,12 +12,12 @@ jobs:
           command: yarn run test --coverage --testResultsProcessor="jest-junit"
           environment:
             JEST_JUNIT_OUTPUT: "reports/junit.xml"
+      - run: node src/bin --markdownChangelogPath src/__tests__/CHANGELOG.md --outputDirectoryPath /tmp/static-site
       - store_test_results:
           path: reports
       - store_artifacts:
           path: coverage/lcov-report
           destination: coverage
-      - run: node src/bin --markdownChangelogPath src/TEST_CHANGELOG.md --outputDirectoryPath /tmp/static-site
       - store_artifacts:
           path: /tmp/static-site
           destination: demo

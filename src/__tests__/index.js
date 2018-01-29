@@ -17,7 +17,7 @@ describe('conversion', () => {
   test('works as expected', () =>
     convertChangelog({
       faviconPath: null, // Use the default favicon.
-      markdownChangelogPath: path.join(__dirname, 'TEST_CHANGELOG.md'),
+      markdownChangelogPath: require.resolve('./CHANGELOG.md'),
       outputDirectoryPath,
     }).then(() =>
       fs
