@@ -10,6 +10,7 @@ const gitHubCssFilePath = require.resolve('github-markdown-css');
 const highlightCssFilePath = require.resolve('highlight.js/styles/github.css');
 
 const {markdownItChangelogPlugin} = require('./markdown-it-changelog-plugin');
+const {sanitizeHtmlLikeGitHub} = require('./sanitize-html-like-github');
 
 const srcDirectoryPath = __dirname;
 const faviconFilename = 'favicon.ico';
@@ -23,6 +24,8 @@ const createMarkdownRenderer = h1TitleCb => {
           ? highlightJs.highlight(language, code, true).value
           : markdownRenderer.utils.escapeHtml(code)
       }</code></pre>`,
+    html: true,
+    linkify: true,
     typographer: true,
   }).use(markdownItChangelogPlugin, {h1TitleCb});
   return markdownRenderer;
@@ -55,9 +58,11 @@ const convertChangelog = ({
     )
     .then(([markdown, htmlTemplate]) => {
       const replacements = {content: null, title: null};
-      replacements.content = createMarkdownRenderer(h1Title => {
-        replacements.title = h1Title;
-      }).render(markdown);
+      replacements.content = sanitizeHtmlLikeGitHub(
+        createMarkdownRenderer(h1Title => {
+          replacements.title = h1Title;
+        }).render(markdown)
+      );
       return Object.keys(replacements).reduce(
         (html, key) => html.replace(`<!-- ${key} -->`, replacements[key]),
         htmlTemplate

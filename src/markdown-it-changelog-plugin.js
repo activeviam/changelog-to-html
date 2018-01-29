@@ -62,7 +62,6 @@ const markdownItChangelogPlugin = (md, {h1TitleCb}) => {
 
       const slug = getGitHubSlug(breadcrumbs.join('-').replace(/\./g, '-'));
       const linkOpenToken = new Token('link_open', 'a', 1);
-      linkOpenToken.attrSet('id', slug);
       linkOpenToken.attrSet('href', `#${slug}`);
       linkOpenToken.attrSet('class', 'anchor');
 
