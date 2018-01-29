@@ -62,12 +62,12 @@ Indeed, when you release another version of your package, all the existing ancho
 
 On the other hand, this package will generate these anchors:
 
-* 0-3-0
-  * 0-3-0-added
-* 0-2-0
-  * 0-2-0-added
-* 0-1-0
-  * 0-1-0-added
+* 0.3.0
+  * 0.3.0-added
+* 0.2.0
+  * 0.2.0-added
+* 0.1.0
+  * 0.1.0-added
 
 By prefixing the _type of changes_ section anchor with the release name, we guarantee that the link will be permanent.
 

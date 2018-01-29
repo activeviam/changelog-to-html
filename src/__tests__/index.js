@@ -9,7 +9,7 @@ const fs = require('fs-extra');
 const {convertChangelog} = require('..');
 
 describe('conversion', () => {
-  const outputDirectoryPath = path.join(__dirname, 'test-dist');
+  const outputDirectoryPath = path.join(__dirname, 'tmp');
 
   beforeEach(() => fs.ensureDir(outputDirectoryPath));
   afterEach(() => fs.remove(outputDirectoryPath));

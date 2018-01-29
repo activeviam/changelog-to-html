@@ -3,7 +3,8 @@
 const path = require('path');
 
 const fs = require('fs-extra');
-const getGitHubSlug = require('github-slugid');
+
+const {getSlug} = require('./slug');
 
 const permalinkIcon = String(
   // eslint-disable-next-line no-sync
@@ -60,10 +61,11 @@ const markdownItChangelogPlugin = (md, {h1TitleCb}) => {
       breadcrumbs.length = indexInBreadcrumbs;
       breadcrumbs[indexInBreadcrumbs] = title;
 
-      const slug = getGitHubSlug(breadcrumbs.join('-').replace(/\./g, '-'));
+      const slug = getSlug(breadcrumbs);
       const linkOpenToken = new Token('link_open', 'a', 1);
-      linkOpenToken.attrSet('href', `#${slug}`);
       linkOpenToken.attrSet('class', 'anchor');
+      linkOpenToken.attrSet('href', `#${slug}`);
+      linkOpenToken.attrSet('id', slug);
 
       const permalinkToken = new Token('html_inline', '', 0);
       permalinkToken.content = permalinkIcon;
