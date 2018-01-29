@@ -6,7 +6,7 @@ const path = require('path');
 
 const fs = require('fs-extra');
 
-const {convertChangelog} = require('.');
+const {convertChangelog} = require('..');
 
 describe('conversion', () => {
   const outputDirectoryPath = path.join(__dirname, 'test-dist');

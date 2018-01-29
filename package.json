@@ -24,13 +24,7 @@
   "engines": {
     "node": ">= 6.5.0"
   },
-  "files": [
-    "src/bin.js",
-    "src/favicon.ico",
-    "src/index.html",
-    "src/index.js",
-    "src/permalink.svg"
-  ],
+  "files": ["src"],
   "jest": {
     "coverageThreshold": {
       "global": {
