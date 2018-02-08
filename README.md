@@ -3,9 +3,7 @@
 
 # Goal
 
-This package provides a CLI to convert a `CHANGELOG.md` file following the [Keep a Changelog](http://keepachangelog.com/en/1.0.0) convention to a static web page with permalinks and a GitHub look and feel.
-
-It will mostly be useful for closed source libraries where customers do not have access to the source code and thus cannot benefit from the Markdown viewer built into GitHub.
+This package provides a CLI for converting a `CHANGELOG.md` file that follows the [Keep a Changelog](http://keepachangelog.com/en/1.0.0) convention into a static web page with permalinks and a GitHub look and feel.
 
 ## Screenshot
 
